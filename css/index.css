@@ -1,0 +1,173 @@
+
+
+
+
+
+/* GOOGLE FONTS
+
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lustria', serif;
+    font-family: 'Aclonica', sans-serif;
+
+    font-family: 'Philosopher', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Nunito', sans-serif;
+
+*/
+#wrapper {
+    width: 50vw;
+    margin: 0 auto;
+    background-color: #fafaf8;
+    padding: 20px 30px;
+}
+body {
+    background-color: #eeede8;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(15, 12, 19);
+
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+ /* NAVIGATION */
+ .top-bar {
+    display: flex;
+ }
+ h1#name {
+    font-family: 'Philosopher', sans-serif;
+    color: RGB(68, 76, 78);
+    text-shadow: 7px 5px 4px #c5c5c5;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+nav {
+    height: 3rem;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    background-color: #eeede8;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+nav ul {
+    list-style-type: none;
+    float: right;
+}
+.pages {
+    display: inline;
+    padding: 0px 30px 0px 0px;
+    font-size: 1.5em;
+}
+.pages a {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    transition: color 0.3s;
+}
+.pages a:hover {
+    color: rgb(161, 105, 90);
+}
+
+ /* ABOUT */
+#about-img {
+    float: left;
+    margin-right: 20px;
+    width: 400px;
+    height: 400px;
+    background: url(/img/sunset-500x400.png) no-repeat;
+
+    /* Photo by <a href="https://unsplash.com/@nattv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nattipat Vesvarute</a> on <a href="https://unsplash.com/s/photos/sunset?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+   box-shadow: 1px 1px 20px 6px #c5c5c5;
+}
+.about p {
+    text-align: justify;
+}
+.about h2 {
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+/* LATEST UPLOADS */
+.latest {
+    display: inline-block;
+}
+.latest h2 {
+    padding-top: 10px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+#recent1, #recent2, #recent3 {
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 9px;
+    width: 190px;
+    height: 220px;
+    background: url(/img/candles-240x280.png) no-repeat;
+    border: none;
+
+    /* Photo by <a href="https://unsplash.com/@labrum777?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike Labrum</a> on <a href="https://unsplash.com/s/photos/candles?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+   box-shadow: 1px 1px 10px 2px #c5c5c5;
+}
+#recent1 .view, #recent2 .view, #recent3 .view {
+    visibility: hidden;
+}
+#recent1:hover, #recent2:hover, #recent3:hover {
+    color: white;
+    width: 190px;
+    height: 220px;
+    opacity: 0.6;
+    transition: all 0.6s ease;
+}
+#recent1:hover .view, #recent2:hover .view, #recent3:hover .view {
+    visibility: visible;
+    font-size: 20px;
+    transition: all 0.5s linear;
+}
+.view {
+    position: absolute;
+    padding-top: 90px;
+    padding-left: 80px;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0px 0px 8px #3d3d3d;
+}
+#recent1 a, #recent2 a, #recent3 a {
+    text-decoration: none;
+}
+a:hover.view {
+    color: rgb(161, 105, 90);
+    
+}
+
+/* SUBMIT */
+.submit-sec h3 {
+    display: inline-block;
+    padding: 0px 30px;
+    font-family: 'Lustria', serif;
+}
+.submit-sec {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+}
+footer p {
+    text-align: center;
+}
