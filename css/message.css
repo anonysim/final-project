@@ -45,6 +45,21 @@ body {
     }
 }
 
+/* GENERIC */
+a {
+    text-decoration: none;
+    color: #020408;
+}
+a:hover {
+    color: #82543B;
+    transition: color 0.5s;
+}
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
 
 /* NAVIGATION */
 .top-bar {
@@ -52,7 +67,7 @@ body {
  }
  h1#name {
     font-family: 'Philosopher', sans-serif;
-    color: RGB(68, 76, 78);
+    color: #6d4937;
     text-shadow: 7px 5px 4px #c5c5c5;
     padding-left: 40px;
     padding-bottom: 40px;
@@ -83,7 +98,7 @@ nav ul {
     transition: color 0.3s;
 }
 .pages a:hover {
-    color: rgb(161, 105, 90);
+    color: #8F8275;
 }
 
 /* SELECT */
@@ -95,24 +110,33 @@ label[for="type"] {
     width: 150px;
     margin-bottom: 20px;
     padding: 5px;
-    
 }
 
-/* MESSAGE BOX */
+/* NAME & EMAIL */
 hr {
     margin-bottom: 20px;
     border: none;
     height: 1px;
     background-color: rgb(54, 54, 54);
 }
-label[for="firstName"], label[for="lastName"], label[for="email"], label[for="type"] {
+
+label[for="firstName"], label[for="lastName"], label[for="email"] {
+    padding-right: 10px;
+    margin-bottom: 8px;
     width: 100px;
     text-align: right;
     display: inline-block;
 }
-label[for="firstName"], label[for="lastName"], label[for="email"] {
-    padding-right: 10px;
-    margin-bottom: 8px;
+
+label[for="type"] {
+    margin-left: 45px;
+    margin-right: 16px;
+}
+
+/* MESSAGE BOX */
+input[type="file"] {
+    margin-left: 40px;
+    margin-bottom: 10px;
 }
 
 h1.message {
@@ -124,20 +148,49 @@ h1.message {
     min-height: 100px;
     max-height: 300px;
     margin-left: 2.5rem;
+    padding: 10px;
 
     font-family: 'Nunito', sans-serif;
     font-size: 14px;    
 }
+
+/* BUTTONS */
 .submit-btn, .reset-btn {
     display: inline-block;
     margin-right: 40px;
     margin-top: 10px;
+    padding: 5px 10px;
+
+    font-family: 'Philosopher', sans-serif;
     font-size: 16px;
-}
-.submit-btn {
-    float: right;
-}
-.reset-btn {
-    margin-left: 40px;
+    border: none;    
+    color: #fff;
+    background-color: #8F8275;
 }
 
+.submit-btn {
+    float: right;
+    margin-right: 20px;
+    box-shadow: 1px 1px 10px 3px #ccc;
+}
+.submit-btn:hover {
+    background-color:rgb(136, 155, 92); /* green */
+}
+
+.reset-btn {
+    margin-left: 40px;
+    box-shadow: 1px 1px 10px 3px #ccc;
+}
+.reset-btn:hover {
+    background-color: rgb(155, 92, 92); /* red */
+}
+
+.reset-btn:hover, .submit-btn:hover {
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+}

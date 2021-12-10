@@ -33,13 +33,17 @@
 
     <h1 class="message">message.</h1>
 
-    <p>this is a filler paragraph. i am thinking of having some information here about message rules, suggestions etc.</p>
+    <p><strong>quick reference: <a href="" target="_blank">my terms of use</a></strong></p>
+    <p>this form can be used to submit any issues or concerns, as well as general comments and questions. be sure to select the appropriate type from the drop down selection.</p>
+    <p>if you're having any issues, please fill out this form  and include the <em>file name with a detailed description of the issue</em>. i will do my best to provide a solution in a timely manner. </p>
+    <p>thank you for your patience and support!</p>
 
     <hr>
     
 <!-- FORM -->
 <form name="message" method="GET">
 
+    <!-- NAME & EMAIL -->
     <section>
         <label for="firstName">first name*</label>
         <input type="text" name="fname" id="fname" required="required" placeholder="first name" autofocus><br>
@@ -49,31 +53,34 @@
 
         <label for="email">email*</label>
         <input type="email" id="email" name="email" required="required" placeholder="email"><br>
+    </section><br>
 
-        <label for="type">type*</label>
+    <!-- SELECT -->
+    <label for="type">type*</label>
         <select name="type" id="type" size="1" required="required">
             <option value="" selected></option>
             <option value="issue">issue/concern</option>
             <option value="comment">general comment</option>
-        </select>
-
-    </section><br>
-
-    <!-- SELECT -->
-    
-    
-
-    
+            <option value="terms">terms of use question</option>
+        </select><br>
 
     <!-- MESSAGE BOX -->
-    <textarea name="" id="message-box" cols="30" rows="10" required="required"></textarea>
-    <br>
-    <input class="submit-btn" type="submit" value="submit">
-    <input class="reset-btn" type="reset" value="reset">
+    
+    <textarea name="" id="message-box" cols="30" rows="10" required="required" placeholder=". . ."></textarea>
+    <input type="file" name="file" id="imageFile"> <!-- placeholder upload file code, need more information for how to choose 1+ images specifically to upload -->
+    <!-- BUTTONS -->
+    <p>
+    <button class="submit-btn">submit</button>
+    <button class="reset-btn">reset</button>
+    </p>
     
 </form>
+<!-- END OF FORM -->
 
 </div>
 <!-- END OF WRAPPER -->
+    <footer>
+        <p>&copy; 2021 divinecap</p>
+    </footer>
 </body>
 </html>
