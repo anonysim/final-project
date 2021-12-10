@@ -1,6 +1,12 @@
+/* CSS reset */
+html {
+    box-sizing: border-box;
+  }
 
-
-
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+ /* end of CSS reset */
 
 
 /* GOOGLE FONTS
@@ -10,10 +16,12 @@
     font-family: 'Aclonica', sans-serif;
 
     font-family: 'Philosopher', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Nunito', sans-serif;
 
 */
+
+/* WRAPPER & BACKGROUND */
 #wrapper {
     width: 50vw;
     margin: 0 auto;
@@ -86,7 +94,7 @@ nav ul {
 #about-img {
     float: left;
     margin-right: 20px;
-    width: 400px;
+    width: 300px;
     height: 400px;
     background: url(/img/sunset-500x400.png) no-repeat;
 
@@ -113,10 +121,8 @@ nav ul {
 
 #recent1, #recent2, #recent3 {
     display: inline-block;
-    margin-right: 8px;
-    margin-left: 9px;
-    width: 190px;
-    height: 220px;
+    width: 160px;
+    height: 190px;
     background: url(/img/candles-240x280.png) no-repeat;
     border: none;
 
@@ -124,13 +130,23 @@ nav ul {
    */
    box-shadow: 1px 1px 10px 2px #c5c5c5;
 }
+#recent1 {
+    margin-left: 0px;
+}
+#recent2 {
+    margin-right: 5px;
+    margin-left: 40px;
+}
+#recent3 {
+    margin-left: 35px;
+}
 #recent1 .view, #recent2 .view, #recent3 .view {
     visibility: hidden;
 }
 #recent1:hover, #recent2:hover, #recent3:hover {
     color: white;
-    width: 190px;
-    height: 220px;
+    width: 160px;
+    height: 190px;
     opacity: 0.6;
     transition: all 0.6s ease;
 }
@@ -141,8 +157,8 @@ nav ul {
 }
 .view {
     position: absolute;
-    padding-top: 90px;
-    padding-left: 80px;
+    padding-top: 80px;
+    padding-left: 60px;
     color: rgb(255, 255, 255);
     font-family: 'Nunito', sans-serif;
     text-shadow: 0px 0px 8px #3d3d3d;

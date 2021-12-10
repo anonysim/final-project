@@ -5,11 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>message</title>
+
+    <link rel="stylesheet" href="/css/message.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- NAVIGATION -->
+    <div class="top-bar">
+        <h1 id="name">divinecap.</h1>
+        
+           <nav>
+               <ul>
+                   <li class="pages"><a href="/index.html">home</a></li>
+                   <li class="pages"><a href="/downloads.html">downloads</a></li>
+                   <li class="pages"><a href="/message.html">message</a></li>
+                   <li class="pages"><a href="/updates.html">updates</a></li>
+               </ul>
+            </nav>
+    </div>
     
-    <h1>message.</h1>
-    <p>this is the message/ask page.</p>
+<!-- WRAPPER -->
+<div id="wrapper">
 
+    <h1 class="message">message.</h1>
+
+    <p>this is a filler paragraph. i am thinking of having some information here about message rules, suggestions etc.</p>
+
+    <hr>
+    
+<!-- FORM -->
+<form name="message" method="GET">
+
+    <section>
+        <label for="firstName">first name*</label>
+        <input type="text" name="fname" id="fname" required="required" placeholder="first name" autofocus><br>
+
+        <label for="lastName">last name*</label>
+        <input type="text" name="lname" id="lname" required="required" placeholder="last name"><br>
+
+        <label for="email">email*</label>
+        <input type="email" id="email" name="email" required="required" placeholder="email"><br>
+
+        <label for="type">type*</label>
+        <select name="type" id="type" size="1" required="required">
+            <option value="" selected></option>
+            <option value="issue">issue/concern</option>
+            <option value="comment">general comment</option>
+        </select>
+
+    </section><br>
+
+    <!-- SELECT -->
+    
+    
+
+    
+
+    <!-- MESSAGE BOX -->
+    <textarea name="" id="message-box" cols="30" rows="10" required="required"></textarea>
+    <br>
+    <input class="submit-btn" type="submit" value="submit">
+    <input class="reset-btn" type="reset" value="reset">
+    
+</form>
+
+</div>
+<!-- END OF WRAPPER -->
 </body>
 </html>
