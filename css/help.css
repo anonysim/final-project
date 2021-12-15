@@ -1,0 +1,135 @@
+/* CSS reset */
+html {
+    box-sizing: border-box;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+ /* end of CSS reset */
+
+/* WRAPPER & BODY */
+ #wrapper {
+    width: 50vw;
+    margin: 0 auto;
+    background-color: #fafaf8;
+    padding: 20px 30px;
+}
+body {
+    background-color: #eeede8;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(15, 12, 19);
+
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* GENERIC */
+a {
+    text-decoration: none;
+    color: #82543B;
+}
+a:hover {
+    color: #848860;
+    transition: color 0.5s;
+}
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+.top-bar {
+    display: flex;
+ }
+ h1#name {
+    font-family: 'Philosopher', sans-serif;
+    color: #6d4937;
+    text-shadow: 7px 5px 4px #c5c5c5;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+nav {
+    height: 3rem;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    background-color: #eeede8;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+nav ul {
+    list-style-type: none;
+    float: right;
+}
+.pages {
+    display: inline;
+    padding: 0px 30px 0px 0px;
+    font-size: 1.5em;
+}
+.pages a {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    transition: color 0.3s;
+}
+.pages a:hover {
+    color: #8F8275;
+}
+
+h1.help {
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+/* QUESTIOS */
+dt, dd {
+    font-size: 18px;
+}
+
+dt {
+    line-height: 2em;
+    font-weight: bold;
+}
+
+dd {
+    line-height: 1.5em;
+}
+
+iframe.video {
+    width: 40vw;
+}
+
+p#farewell {
+    color: #848860;
+    font-size: 22px;
+    text-align: right;
+}
+
+hr {
+    border: none;
+    background-color:#6d4937;
+    height: 1px;
+}
+
+ /* FOOTER */
+ footer {
+    text-align: center;
+}
