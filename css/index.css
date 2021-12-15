@@ -96,7 +96,7 @@ nav ul {
     margin-right: 20px;
     width: 300px;
     height: 400px;
-    background: url(/img/sunset-500x400.png) no-repeat;
+    background: url(/img/about-300x400.png) no-repeat;
 
     /* Photo by <a href="https://unsplash.com/@nattv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nattipat Vesvarute</a> on <a href="https://unsplash.com/s/photos/sunset?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
    */
@@ -123,7 +123,7 @@ nav ul {
     display: inline-block;
     width: 160px;
     height: 190px;
-    background: url(/img/candles-240x280.png) no-repeat;
+    
     border: none;
 
     /* Photo by <a href="https://unsplash.com/@labrum777?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike Labrum</a> on <a href="https://unsplash.com/s/photos/candles?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -132,13 +132,16 @@ nav ul {
 }
 #recent1 {
     margin-left: 0px;
+    background: url(/img/milenahair-160.png) no-repeat;
 }
 #recent2 {
     margin-right: 5px;
     margin-left: 40px;
+    background: url(/img/riannehair-160.png) no-repeat;
 }
 #recent3 {
     margin-left: 35px;
+    background: url(/img/lilithhair-160.png) no-repeat;
 }
 #recent1 .view, #recent2 .view, #recent3 .view {
     visibility: hidden;
