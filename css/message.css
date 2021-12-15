@@ -48,10 +48,10 @@ body {
 /* GENERIC */
 a {
     text-decoration: none;
-    color: #020408;
+    color: #82543B;
 }
 a:hover {
-    color: #82543B;
+    color: #848860;
     transition: color 0.5s;
 }
 em {

@@ -21,6 +21,22 @@ html {
 
 */
 
+/* GENERIC */
+a {
+    text-decoration: none;
+    color: #82543B;
+}
+a:hover {
+    color: #848860;
+    transition: color 0.5s;
+}
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+
 /* WRAPPER & BACKGROUND */
 #wrapper {
     width: 50vw;
@@ -56,7 +72,7 @@ body {
  }
  h1#name {
     font-family: 'Philosopher', sans-serif;
-    color: RGB(68, 76, 78);
+    color: #6d4937;
     text-shadow: 7px 5px 4px #c5c5c5;
     padding-left: 40px;
     padding-bottom: 40px;
@@ -87,7 +103,7 @@ nav ul {
     transition: color 0.3s;
 }
 .pages a:hover {
-    color: rgb(161, 105, 90);
+    color: #8F8275;
 }
 
  /* ABOUT */
@@ -147,7 +163,7 @@ nav ul {
     visibility: hidden;
 }
 #recent1:hover, #recent2:hover, #recent3:hover {
-    color: white;
+    color: #fff;
     width: 160px;
     height: 190px;
     opacity: 0.6;
@@ -170,7 +186,7 @@ nav ul {
     text-decoration: none;
 }
 a:hover.view {
-    color: rgb(161, 105, 90);
+    color: rgb(228, 228, 228);
     
 }
 
@@ -186,7 +202,5 @@ a:hover.view {
 
 /* FOOTER */
 footer {
-}
-footer p {
     text-align: center;
 }
